@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zufälliger Gutschein</title>
-<style>
+  <style>
     body {
       margin: 0;
       height: 100vh;
@@ -54,22 +54,24 @@
       }
     }
   </style>
-  
 </head>
+  
 <body>
-  <div class="coupon">
-    <img id="couponImage" src="" alt="Random Coupon" />
+  <div class="gift-box" onclick="openGift()"></div>
+  <div class="coupon" id="couponImageContainer">
+    <img id="couponImage" src="" alt="Your Coupon" />
   </div>
-
   <script>
     const images = [
       "bilder/burger.png",
-      "bilder/donerPommes.png"
+      "bilder/donerPommes.png"    
     ];
-
     const randomImage = images[Math.floor(Math.random() * images.length)];
     document.getElementById("couponImage").src = randomImage;
+    function openGift() {
+      document.querySelector(".gift-box").style.display = "none";
+      document.getElementById("couponImageContainer").classList.add("show");
+    }
   </script>
 </body>
 </html>
-
