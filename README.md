@@ -9,7 +9,7 @@ This is a simple HTML page to display a restaurant coupon image hosted on Google
 3. Access your page at:
 
 ```
-https://Abdullah-MAS2103.github.io/restaurant-coupons/coupon1.html
+https://Abdullah-MAS2103.github.io/DonerStation/coupon1.html
 ```
 
 You can generate a QR code for that link and print or share it!
