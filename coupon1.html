@@ -1,18 +1,18 @@
-
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Döner Coupon</title>
+  <title>Random Coupon</title>
   <style>
     body {
       margin: 0;
-      background-color: #ffefdc;
+      background-color: #fff7e6;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      font-family: sans-serif;
     }
     .coupon {
       max-width: 90%;
@@ -27,14 +27,23 @@
     img {
       width: 100%;
       height: auto;
-      display: block;
     }
   </style>
 </head>
 <body>
-  <div class="coupons">
-    <img src="bilder/burger.png" alt="Coupon Image" />
-    <img sec= "bilder/donerPommes.png" alt = "Coupon Image"/>
+  <div class="coupon">
+    <img id="couponImage" src="" alt="Random Coupon" />
   </div>
+
+  <script>
+    const images = [
+      "bilder/burger.png",
+      "bilder/donerPommes.png"
+    ];
+
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.getElementById("couponImage").src = randomImage;
+  </script>
 </body>
 </html>
+
