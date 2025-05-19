@@ -1,5 +1,4 @@
-<style>
-    body {
+     body {
       margin: 0;
       background: radial-gradient(circle, #fff7e6 0%, #ffedd5 100%);
       height: 100vh;
@@ -49,4 +48,3 @@
       object-fit: contain;
       display: block;
     }
-  </style>
