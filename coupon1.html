@@ -154,11 +154,15 @@
 
   <script>
     const images = [
-      "bilder/donerPommes.png",
-      "bilder/burger.png"
+      "bilder/Coboun/5euroRabatt.png",
+      "bilder/Coboun/burgerPommes.png",
+      "bilder/Coboun/doener.png",
+      "bilder/Coboun/leererGutschein.png",
+      "bilder/Coboun/miniDoener.png"
     ];
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-    document.getElementById("couponImage").src = randomImage;
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const selectedImage = images[randomIndex];
+    document.getElementById("couponImage").src = selectedImage;
 
   const background = document.querySelector('.background-icons');
   // روابط صور الهدايا
