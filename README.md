@@ -15,33 +15,6 @@ Willkommen bei **DonerStation** – einer kreativen, responsiven Webseite mit in
 | ❌ Leerer Gutschein    | [Ansehen](https://ghreas-code.github.io/DonerStation/leererGutschein.html) |
 | 🌯 Mini-Döner          | [Ansehen](https://ghreas-code.github.io/DonerStation/miniDoener.html) |
 
----
-
-## 📁 Projektstruktur
-
-```
-📁 DonerStation/
-├── bilder/
-│   ├── Background.png
-│   ├── logo.png
-│   ├── question.png
-│   ├── giftSound.mp3
-│   ├── badLuck.mp3
-│   ├── giftIcon1.png – giftIcon4.png
-│   └── Coboun/
-│       ├── 5euroRabatt.png
-│       ├── burgerPommes.png
-│       ├── doener.png
-│       ├── leererGutschein.png
-│       └── miniDoener.png
-│
-├── burgerPommes.html
-├── 5euroRabatt.html
-├── doener.html
-├── leererGutschein.html
-├── miniDoener.html
-└── README.md
-```
 
 ---
 
