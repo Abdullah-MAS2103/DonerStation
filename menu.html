@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📋 Speisekarte</title>
+  <style>
+    body {
+      margin: 0;
+      background-image: url('bilder/Icons/Background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 150px;
+      box-sizing: border-box;
+      position: relative;
+      color: #f7941c;
+      text-align: center;
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    .logo-container img {
+      width: 200px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .welcome-text {
+      font-size: 28px;
+      margin-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      max-width: 90%;
+    }
+
+    .menu-frame {
+      width: 90%;
+      height: 75vh;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    @media (max-width: 600px) {
+      .logo-container img {
+        width: 140px;
+      }
+
+      .welcome-text {
+        font-size: 20px;
+      }
+
+      .menu-frame {
+        height: 65vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الشعار -->
+  <div class="logo-container">
+    <img src="bilder/Logo/logoStation.png" alt="Logo" />
+  </div>
+
+  <!-- النص الترحيبي -->
+  <div class="welcome-text">
+    Willkommen! 🎉<br />
+    Entdecke unsere leckere Auswahl – mit Liebe für deinen Magen ❤️
+  </div>
+
+  <!-- عرض القائمة -->
+  <iframe class="menu-frame" src="bilder/Logo/menu1.png"></iframe>
+  <iframe class="menu-frame" src="bilder/Logo/menu2.png"></iframe>
+
+</body>
+</html>
 
